@@ -1,0 +1,46 @@
+Case 1:
+	Given: 2, 3
+	When: isStartNumLessThanEndNum(2,3)
+	Then: true
+Case 2:
+	Given: 3, 2
+	When: isStartNumLessThanEndNum(3,2)
+	Then: false
+Case 3:
+	Given: 2, 2
+	When: isStartNumLessThanEndNum(2,2)
+	Then: true
+Case 4:
+	Given: 2, 2
+	When: isStartNumAndEndNumWithinRange(2,2)
+	Then: true
+Case 5:
+	Given: 1000, 1000
+	When: isStartNumAndEndNumWithinRange(1000,1000)
+	Then: true
+Case 6:
+	Given: 1, 1
+	When: isStartNumAndEndNumWithinRange(1,1)
+	Then: false
+Case 7:
+	Given: 0, 0
+	When: isStartNumAndEndNumWithinRange(0,0)
+	Then: false
+Case 8:
+	Given: 1001, 1001
+	When: isStartNumAndEndNumWithinRange(1001,1001)
+	Then: false
+Case 9:
+	Given: 1001, 1001
+	When: createMultiplicationTable(1001,1001)
+	Then: null
+Case 10:
+	Given: 3, 2
+	When: createMultiplicationTable(3,2)
+	Then: null
+Case 11:
+	Given: 2, 4
+	When: createMultiplicationTable(2,4)
+	Then: 2*2=4\n' +
+                    '2*3=6  3*3=9\n' +
+                    '2*4=8  3*4=12  4*4=16';

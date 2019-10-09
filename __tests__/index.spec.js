@@ -66,9 +66,9 @@ it ('should return null when parameters not within range', () => {
     expect(result).toBe(null);
 });
 
-it ('should return null when start num is less than end num', () => {
-    const startNum = 1001;
-    const endNum = 1001;
+it ('should return null when start num is greater than end num', () => {
+    const startNum = 3;
+    const endNum = 2;
     let result = createMultiplicationTable(startNum, endNum);
     expect(result).toBe(null);
 });
